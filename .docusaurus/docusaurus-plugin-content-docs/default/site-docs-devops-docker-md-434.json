@@ -1,0 +1,20 @@
+{
+  "id": "devops/docker",
+  "title": "docker",
+  "description": "Docker",
+  "source": "@site/docs/devops/docker.md",
+  "sourceDirName": "devops",
+  "slug": "/devops/docker",
+  "permalink": "/IlmStack/docs/devops/docker",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/devops/docker.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tutorial Intro",
+    "permalink": "/IlmStack/docs/intro"
+  }
+}
