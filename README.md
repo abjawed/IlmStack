@@ -1,7 +1,9 @@
 # Website
 
-Hosted URL : (https://abjawed.github.io/IlmStack/docs/intro), 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+
+Hosted URL : (https://abjawed.github.io/IlmStack/docs/intro), 
+Local Run URL: (http://localhost:3000/IlmStack/)
 
 ## Installation
 
