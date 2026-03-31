@@ -39,6 +39,26 @@ const sidebars = {
       label: 'DevOps',
       items: ['devops/docker'],
     },
+    {
+      type: 'category',
+      label: 'Tibco',
+      items: ['tibco/tibco-businessworks', 'tibco/tibco-ems'],
+    },
+    {
+      type: 'category',
+      label: 'Windows-Insallation',
+      items: ['windows-Insallation/jenkins'],
+    },
+    {
+      type: 'category',
+      label: 'Linux-Insallation',
+      items: ['linux-Installation/jenkins', 'linux-Installation/ssh'],
+    },
+    {
+      type: 'category',
+      label: 'Learning-Arc-Docs',
+      items: ['learning-arc-docs/github-career-resources'],
+    },
 /*     {
       type: 'category',
       label: 'API Gateway',
