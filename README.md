@@ -42,3 +42,42 @@ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
+##### To Run in windows
+npm start 
+
+http://localhost:3000/IlmStack/
+
+
+
+
+
+
+
+npm start
+
+> my-tech-docs@0.0.0 start
+> docusaurus start
+
+
+ ----------------------------------------------------------------------------------------------------------------                                                                                                                   
+                                         Update available 3.9.2 → 3.10.0                                          
+                                                                                                                  
+                To upgrade Docusaurus packages with the latest version, run the following command:                
+     `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest @docusaurus/module-type-aliases@latest                                                  @docusaurus/types@latest`                                             
+                                                                                                                  
+ ---------------------------------------------------------------------------------------------------------------- 
+
+[INFO] Starting the development server...
+[SUCCESS] Docusaurus website is running at: http://localhost:3000/IlmStack/
+
+√ Client
+  Compiled successfully in 4.46s
+
+client (webpack 5.105.4) compiled successfully
+
+√ Client
+  Compiled successfully in 442.76ms
+
+client (webpack 5.105.4) compiled successfully
