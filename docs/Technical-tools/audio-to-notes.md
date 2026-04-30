@@ -213,7 +213,112 @@ FP16 is not supported on CPU
 
 ---
 
+# 🧹 Method 1: Remove Timestamps from `.srt` (Convert to Plain Text)
 
+## 🎯 Overview
+This method converts subtitle files (`.srt`) into clean readable text by removing:
+
+- ⏱️ Timestamps  
+- 🔢 Sequence numbers  
+
+👉 Result: Plain text file ready for notes or summarization
+
+---
+
+## 📄 Script: `remove_timestamp.py`
+
+```python
+input_file = "AM_PAM_01.srt"
+output_file = "AM_PAM_01.txt"
+
+with open(input_file, "r", encoding="utf-8") as f:
+    lines = f.readlines()
+
+clean_lines = []
+for line in lines:
+    line = line.strip()
+    if line and not line.isdigit() and "-->" not in line:
+        clean_lines.append(line)
+
+with open(output_file, "w", encoding="utf-8") as f:
+    f.write("\n".join(clean_lines))
+
+print("✅ Clean text saved to AM_PAM_01.txt")
+````
+
+---
+
+## ▶️ How to Run
+
+```bash
+python remove_timestamp.py
+```
+
+---
+
+## 📁 Folder Structure
+
+```text
+project/
+│
+├── remove_timestamp.py
+├── AM_PAM_01.srt
+```
+
+---
+
+## 📄 Input Example (`.srt`)
+
+```text
+1
+00:00:01,000 --> 00:00:03,000
+Hello everyone
+
+2
+00:00:04,000 --> 00:00:06,000
+Welcome to the session
+```
+
+---
+
+## 📄 Output Example (`.txt`)
+
+```text
+Hello everyone
+Welcome to the session
+```
+
+---
+
+## 🔧 Requirements
+
+Uses built-in modules from Python:
+
+* `open()`
+* `file handling`
+
+👉 No additional libraries required
+
+---
+
+## ⚠️ Notes
+
+* Ensure `.srt` file is in the same folder as the script
+* Update file name in script if needed
+* Works for any standard subtitle file
+
+---
+
+## 🚀 Recommended Use
+
+```text
+1. Generate .srt using Whisper
+2. Run this script
+3. Get clean text
+4. Convert to notes / summaries
+```
+
+---
 # 🚀 Method 2: Intelligent Notes Generator (Fully Automated)
 
 ## 🎯 Overview
@@ -490,6 +595,4 @@ For each `.mp3`:
 3. Move → input_audio
 4. Run script
 5. Get notes → output_notes
-```
-
 ```
